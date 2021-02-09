@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {  } from "react";
+import { UseAxiosApp } from "./Hooks/UseAxios";
+import { UseBeforeLeaveApp } from "./Hooks/UseBeforeLeave";
+import { UseClickApp } from "./Hooks/UseClick";
+import { UseEffectApp } from "./Hooks/UseEffect";
+import { UseEventsApp } from "./Hooks/UseEvents";
+import { UseFadeInApp } from "./Hooks/UseFadeIn";
+import { UseFullscreenApp } from "./Hooks/UseFullscreen";
+import { UseInputApp } from "./Hooks/UseInput";
+import { UseMemoApp } from "./Hooks/UseMemo";
+import { UseNetworkApp } from "./Hooks/UseNetwork";
+import { UseNotificationApp } from "./Hooks/UseNotification";
+import { UseScrollApp } from "./Hooks/UseScroll";
+import { UseTabsApp } from "./Hooks/UseTabs";
+import { UseTitleApp } from "./Hooks/UseTitle";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    return (
+        <div className="App">
+            <h1>useAxios</h1>
+            <UseAxiosApp/>
+            <UseBeforeLeaveApp/>
+            <UseClickApp/>
+            <UseEffectApp/>
+            <UseEventsApp/>
+            <UseFadeInApp/>
+            <UseFullscreenApp/>
+            <UseInputApp/>
+            <UseMemoApp/>
+            <UseNetworkApp/>
+            <UseNotificationApp/>
+            <UseTabsApp/>
+            <UseTitleApp/>
+            <UseScrollApp/>
+        </div>
+    )
 }
-
-export default App;
